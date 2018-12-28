@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>dankEats</title>
+  </head>
+  <body>
+    <div id="Header"></div>
+    <div id="Photo-Gallery"></div>
+    <div id="Reviews"></div>
+    <div id="Sidebar"></div>
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <script src="http://localhost:3003/app.js"></script>
+    <script src="http://localhost:3001/app.js"></script>
+    <script src="http://localhost:5002/app.js"></script>
+    <script src="http://localhost:3005/app.js"></script>
+    <script>
+      ReactDOM.render(
+        React.createElement(Header),
+        document.getElementById('Header')
+      );
+      ReactDOM.render(
+        React.createElement(Photo-Gallery),
+        document.getElementById('Photo-Gallery')
+      );
+      ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('Reviews')
+      );
+      ReactDOM.render(
+        React.createElement(Sidebar),
+        document.getElementById('Sidebar')
+      );
+    </script>
+  </body>
+</html>
