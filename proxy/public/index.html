@@ -3,34 +3,35 @@
   <head>
     <meta charset="UTF-8">
     <title>dankEats</title>
+    <link href="main.css" rel="stylesheet">
   </head>
   <body>
-    <div id="Header"></div>
-    <div id="Photo-Gallery"></div>
-    <div id="Reviews"></div>
-    <div id="Sidebar"></div>
+    <div id="header"></div>
+    <div id="gallery"></div>
+    <div id="reviews"></div>
+    <div id="sidebar"></div>
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:5002/app.js"></script>
-    <script src="http://localhost:3005/app.js"></script>
+    <script src="http://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:3003/bundle.js"></script>
+    <script src="http://localhost:5002/bundle.js"></script>
+    <script src="http://localhost:3005/bundle.js"></script>
     <script>
       ReactDOM.render(
         React.createElement(Header),
-        document.getElementById('Header')
+        document.getElementById('header')
       );
       ReactDOM.render(
-        React.createElement(Photo-Gallery),
-        document.getElementById('Photo-Gallery')
+        React.createElement(Gallery),
+        document.getElementById('gallery')
       );
       ReactDOM.render(
         React.createElement(Reviews),
-        document.getElementById('Reviews')
+        document.getElementById('reviews')
       );
       ReactDOM.render(
         React.createElement(Sidebar),
-        document.getElementById('Sidebar')
+        document.getElementById('sidebar')
       );
     </script>
   </body>
