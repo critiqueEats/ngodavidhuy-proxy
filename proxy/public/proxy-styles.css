@@ -1,0 +1,34 @@
+#top-shelf {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#bottom-shelf {
+  display: flex;
+  justify-content: center;
+}
+
+#sidebar {
+  position: relative;
+  top: 2em;
+  left: -2em;
+} 
+
+#reviews {
+  position: relative;
+  top: 2em;
+  left: -5.5em;
+}
+
+#header {
+  position: relative;
+  float: left;
+  left: -14em;
+}
+
+#gallery {
+  position: relative;
+  float: center;
+  top: 15em;
+  left: -85em;
+}

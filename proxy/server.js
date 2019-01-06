@@ -7,6 +7,7 @@ const port = process.env.PORT || 1337;
 const app = express();
 
 app.use(morgan('dev'));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/restaurant/:restaurantId', (req, res) => {
